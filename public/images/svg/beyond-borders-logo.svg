@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <rect width="240" height="60" rx="12" fill="#383fab"/>
+  <path d="M24 16L36 28L24 40" stroke="#ff9800" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="28" r="3" fill="#ff9800"/>
+  <text x="48" y="32" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" letter-spacing="-0.5">BEYOND BORDERS</text>
+  <text x="48" y="44" fill="#dee5ff" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" letter-spacing="0.5">ENGLISH ACADEMY</text>
+</svg>

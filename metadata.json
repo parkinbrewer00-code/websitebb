@@ -1,0 +1,6 @@
+{
+  "name": "Beyond Borders",
+  "description": "Thai-to-English language learning platform offering online courses, 1-on-1 private coaching packages, live availability calendar booking, student testimonials, and a full-featured backend management portal for Teacher Kym.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,132 @@
+{
+  "entities": {
+    "courses": {
+      "title": "Online Courses",
+      "description": "Audio masterclasses, study workbooks, and interactive courses offered by Beyond Borders",
+      "fields": {
+        "titleEn": { "type": "string", "description": "English title" },
+        "titleTh": { "type": "string", "description": "Thai title" },
+        "subtitleEn": { "type": "string", "description": "English subtitle" },
+        "subtitleTh": { "type": "string", "description": "Thai subtitle" },
+        "descriptionEn": { "type": "string", "description": "English description" },
+        "descriptionTh": { "type": "string", "description": "Thai description" },
+        "coverImage": { "type": "string", "description": "Cover thumbnail URL" },
+        "level": { "type": "string", "description": "Target learner level" },
+        "lessonsCount": { "type": "number", "description": "Number of lessons" },
+        "durationHours": { "type": "string", "description": "Total duration" },
+        "priceThb": { "type": "number", "description": "Price in THB" },
+        "originalPriceThb": { "type": "number", "description": "Original price in THB" },
+        "isComingSoon": { "type": "boolean", "description": "Whether course is coming soon" },
+        "popular": { "type": "boolean", "description": "Whether highlighted as popular" },
+        "studentsCount": { "type": "number", "description": "Number of students enrolled" },
+        "rating": { "type": "number", "description": "Course rating" },
+        "highlightsEn": { "type": "array", "description": "Bullet points in English" },
+        "highlightsTh": { "type": "array", "description": "Bullet points in Thai" },
+        "syllabus": { "type": "array", "description": "Structured modules and lessons" },
+        "handoutPdfUrl": { "type": "string", "description": "Downloadable course PDF workbook / handout" },
+        "handoutPdfName": { "type": "string", "description": "Original filename of the course PDF" },
+        "handoutPdfSize": { "type": "string", "description": "Formatted file size of the PDF" },
+        "handoutPdfUploadedAt": { "type": "string", "description": "Upload timestamp of the PDF" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" }
+      }
+    },
+    "reviews": {
+      "title": "Student Reviews",
+      "description": "Testimonials and transformations from real students",
+      "fields": {
+        "studentName": { "type": "string", "description": "Student full name" },
+        "roleEn": { "type": "string", "description": "Student profession/role in EN" },
+        "roleTh": { "type": "string", "description": "Student profession/role in TH" },
+        "avatar": { "type": "string", "description": "Avatar photo URL" },
+        "rating": { "type": "number", "description": "Star rating out of 5" },
+        "quoteEn": { "type": "string", "description": "Testimonial in English" },
+        "quoteTh": { "type": "string", "description": "Testimonial in Thai" },
+        "courseTakenEn": { "type": "string", "description": "Course taken in English" },
+        "courseTakenTh": { "type": "string", "description": "Course taken in Thai" },
+        "isFeatured": { "type": "boolean", "description": "Featured on homepage" },
+        "isApproved": { "type": "boolean", "description": "Approved for display" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" }
+      }
+    },
+    "packages": {
+      "title": "1-on-1 Coaching Packages",
+      "description": "Private live 1-on-1 coaching packages and pricing",
+      "fields": {
+        "nameEn": { "type": "string", "description": "English package name" },
+        "nameTh": { "type": "string", "description": "Thai package name" },
+        "subtitleEn": { "type": "string", "description": "English description" },
+        "subtitleTh": { "type": "string", "description": "Thai description" },
+        "sessionsCount": { "type": "number", "description": "Number of 1-on-1 sessions" },
+        "sessionDuration": { "type": "string", "description": "Duration per session" },
+        "priceThb": { "type": "number", "description": "Current package price in THB" },
+        "pricePerSessionThb": { "type": "number", "description": "Calculated price per session" },
+        "originalPriceThb": { "type": "number", "description": "Original standard price" },
+        "popular": { "type": "boolean", "description": "Highlighted as popular" },
+        "badgeEn": { "type": "string", "description": "Badge in English" },
+        "badgeTh": { "type": "string", "description": "Badge in Thai" },
+        "featuresEn": { "type": "array", "description": "Feature list in English" },
+        "featuresTh": { "type": "array", "description": "Feature list in Thai" },
+        "targetAudienceEn": { "type": "string", "description": "Ideal learner profile in EN" },
+        "targetAudienceTh": { "type": "string", "description": "Ideal learner profile in TH" }
+      }
+    },
+    "bookings": {
+      "title": "1-on-1 Session Bookings",
+      "description": "Student private coaching appointments and requests",
+      "fields": {
+        "packageId": { "type": "string", "description": "Selected package ID" },
+        "packageName": { "type": "string", "description": "Selected package name" },
+        "studentName": { "type": "string", "description": "Student full name" },
+        "studentEmail": { "type": "string", "description": "Student email" },
+        "studentPhone": { "type": "string", "description": "Student phone number" },
+        "studentLineId": { "type": "string", "description": "WhatsApp or Line handle" },
+        "preferredDate": { "type": "string", "description": "Requested date (YYYY-MM-DD)" },
+        "preferredTimeSlot": { "type": "string", "description": "Requested time slot" },
+        "learningGoals": { "type": "string", "description": "Student focus areas or goals" },
+        "currentEnglishLevel": { "type": "string", "description": "Self-assessed level" },
+        "priceThb": { "type": "number", "description": "Agreed price in THB" },
+        "status": { "type": "string", "description": "pending | confirmed | completed | cancelled" },
+        "meetingLink": { "type": "string", "description": "Google Meet or Zoom link" },
+        "adminNotes": { "type": "string", "description": "Internal teacher notes" },
+        "createdAt": { "type": "string", "description": "Submission timestamp" }
+      }
+    },
+    "calendar_slots": {
+      "title": "Teacher Availability Slots",
+      "description": "Calendar slots for 1-on-1 scheduling",
+      "fields": {
+        "date": { "type": "string", "description": "Date (YYYY-MM-DD)" },
+        "timeSlot": { "type": "string", "description": "Time range e.g. 10:00 - 11:00" },
+        "isBooked": { "type": "boolean", "description": "Whether slot has been reserved" },
+        "bookingId": { "type": "string", "description": "Associated booking ID" },
+        "isBlocked": { "type": "boolean", "description": "Whether teacher blocked this slot" },
+        "note": { "type": "string", "description": "Slot note or label" }
+      }
+    },
+    "media_files": {
+      "title": "Media & File Library",
+      "description": "Uploaded images, course handouts, worksheets, and documents",
+      "fields": {
+        "name": { "type": "string", "description": "File name" },
+        "url": { "type": "string", "description": "URL or DataURL" },
+        "fileType": { "type": "string", "description": "image | pdf | doc | audio" },
+        "size": { "type": "string", "description": "File size string" },
+        "category": { "type": "string", "description": "avatar | course_cover | worksheet | document" },
+        "uploadedAt": { "type": "string", "description": "Upload timestamp" }
+      }
+    },
+    "admin_audit_logs": {
+      "title": "Admin Security & Audit Logs",
+      "description": "System event audit trail for login, pricing changes, and data mutations",
+      "fields": {
+        "action": { "type": "string", "description": "Short action name" },
+        "category": { "type": "string", "description": "auth | booking | course | package | review | security | media" },
+        "details": { "type": "string", "description": "Action details" },
+        "timestamp": { "type": "string", "description": "ISO timestamp" },
+        "actor": { "type": "string", "description": "User or teacher who performed the action" },
+        "status": { "type": "string", "description": "success | warning | error" },
+        "ipOrDevice": { "type": "string", "description": "Device or browser client string" }
+      }
+    }
+  }
+}
